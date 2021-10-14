@@ -2,9 +2,13 @@ package com.example.terras;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
         ListView listView;  //obj of Listview which can access to the builtin methods
@@ -41,7 +45,39 @@ public class MainActivity extends AppCompatActivity {
         //Arrayadapter will connects the layout to the data
         listView.setAdapter(adapter);
 
+
+
+      //  Handling click events
+      //  You can respond to click events on each item in an AdapterView
+      //  by implementing the AdapterView.OnItemClickListener interface. For example:
+        // Create a message handling object as an anonymous class.
+
+        // simply copy paste
+        AdapterView.OnItemClickListener messageClickedHandler = new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView parent, View v, int position, long id) {
+
+                Context context = getApplicationContext();
+                CharSequence text = "item has been clicked!";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+
+
+
+            }
+        };
+
+        listView.setOnItemClickListener(messageClickedHandler);
+
+
+//copy paste untill here
+
+
     }
+
+
+
 }
 
 
