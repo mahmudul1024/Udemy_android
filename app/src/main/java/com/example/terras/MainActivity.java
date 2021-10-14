@@ -59,14 +59,17 @@ public class MainActivity extends AppCompatActivity {
             AdapterView.OnItemClickListener messageClickedHandler = new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView parent, View v, int position, long id) {
 
-                Context context = getApplicationContext();
-               CharSequence text = "item has been clicked!"+adapter.getItem(position);
-               int duration = Toast.LENGTH_SHORT;
+              //  Context context = getApplicationContext();
+             //  CharSequence text = "item has been clicked!"+adapter.getItem(position);
+            //   int duration = Toast.LENGTH_SHORT;
 
-                Toast toast = Toast.makeText(context, text  , duration);
-                toast.show();
+            //    Toast toast = Toast.makeText(context, text  , duration);
+            //    toast.show();
 
+                //we can also use snackbar instead of toast which boost performance
+                //To show a snackbar with a message and no action:
 
+                Snackbar.make(listView,"my name" +adapter.getItem(position), Snackbar.LENGTH_SHORT).show();
 
 
               }
@@ -75,8 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
         listView.setOnItemClickListener(messageClickedHandler);
 
-        //we can also use snackbar instead of toast which boost performance
-        //To show a snackbar with a message and no action:
+
 
 
 
