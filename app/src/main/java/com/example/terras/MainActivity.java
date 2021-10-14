@@ -10,6 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity {
         ListView listView;  //obj of Listview which can access to the builtin methods
     //of Listview
@@ -53,22 +55,30 @@ public class MainActivity extends AppCompatActivity {
         // Create a message handling object as an anonymous class.
 
         // simply copy paste
-        AdapterView.OnItemClickListener messageClickedHandler = new AdapterView.OnItemClickListener() {
+
+            AdapterView.OnItemClickListener messageClickedHandler = new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView parent, View v, int position, long id) {
 
                 Context context = getApplicationContext();
-                CharSequence text = "item has been clicked!";
-                int duration = Toast.LENGTH_SHORT;
+               CharSequence text = "item has been clicked!"+adapter.getItem(position);
+               int duration = Toast.LENGTH_SHORT;
 
-                Toast toast = Toast.makeText(context, text, duration);
+                Toast toast = Toast.makeText(context, text  , duration);
                 toast.show();
 
 
 
-            }
-        };
+
+              }
+       };
+
 
         listView.setOnItemClickListener(messageClickedHandler);
+
+        //we can also use snackbar instead of toast which boost performance
+        //To show a snackbar with a message and no action:
+
+
 
 
 //copy paste untill here
