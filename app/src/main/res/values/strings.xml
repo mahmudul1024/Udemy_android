@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Terras</string>
+    <string name="textview">TextView</string>
+    <string name="food_menu">Food Menu</string>
 </resources>
