@@ -4,6 +4,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+//acts as single layout blueprint
+    //what will be inside Gridview
+
     <ImageView
         android:id="@+id/icon"
         android:layout_width="100dp"

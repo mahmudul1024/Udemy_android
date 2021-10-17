@@ -4,6 +4,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    //main blueprint
+    //How we  want our view to be shown
+
     <GridView
         android:id="@+id/simpleGridView"
         android:layout_width="fill_parent"
