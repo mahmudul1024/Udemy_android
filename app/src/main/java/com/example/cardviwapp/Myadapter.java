@@ -6,12 +6,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
 
@@ -54,6 +56,19 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.MyviewHolder> {
         // For a simple view:
 
         Glide.with(context).load(models_data.getThumnail()).into(holder.imgob);
+            //add clicklisener on itemview
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view){
+                //display toast message
+
+               Toast.makeText(context,"you clicked on"+models_data.getName(),
+                       Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
 
 
     }
@@ -65,7 +80,7 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.MyviewHolder> {
 
 
     //Step 3 Myviewholder class
-    public class MyviewHolder extends RecyclerView.ViewHolder {
+    public static class MyviewHolder extends RecyclerView.ViewHolder {
        //creating reference from single view
       public   TextView txtob1, txtob2;
       public   ImageView imgob;
