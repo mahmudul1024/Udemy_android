@@ -2,7 +2,10 @@ package com.example.baseadapterexample;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 public class MainActivity extends Activity {
@@ -25,5 +28,27 @@ public class MainActivity extends Activity {
         CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), animals);
        //adapter is set on gridview
         simpleGrid.setAdapter(customAdapter);
+
+
+
+        // implement setOnItemClickListener event on GridView
+        simpleGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // set an Intent to Another Activity
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("image", animals[position]); // put image data in Intent
+                startActivity(intent); // start Intent
+            }
+        });
+
+
+
+
+
+
+
+
+
     }
 }
