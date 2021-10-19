@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,9 +8,18 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/txt1id"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="58dp"
         android:gravity="center"
-        android:text="First Fragment" />
+        android:text="First Fragment"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/imageView1id"
+        android:layout_width="273dp"
+        android:layout_height="248dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bronx5" />
 
 </FrameLayout>
