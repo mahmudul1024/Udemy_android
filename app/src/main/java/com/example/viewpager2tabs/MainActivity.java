@@ -47,10 +47,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+//this method for swiping line under the tab that moves its place with the current fragment
         pager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
+
                 tabLayout.selectTab(tabLayout.getTabAt(position));
             }
         });
