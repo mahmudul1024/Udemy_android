@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headerlayoutid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageViewid"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:contentDescription="@string/todooooooo"
+        app:srcCompat="@drawable/passport" />
+
+    <TextView
+        android:id="@+id/textView1id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#E4E8DA"
+        android:drawablePadding="5dp"
+        android:text="@string/muhit_international"
+        android:textColor="#175CA2"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView2id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#E4E8DA"
+        android:text="@string/berlin"
+        android:textColor="#175CA2"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</androidx.appcompat.widget.LinearLayoutCompat>

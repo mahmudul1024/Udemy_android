@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/flightid"
+        android:icon="@drawable/ic_baseline_airplanemode_active_24"
+        android:title="@string/flight" />
+    <item
+        android:id="@+id/busid"
+        android:icon="@drawable/ic_baseline_directions_bus_24"
+        android:title="@string/bus" />
+    <item
+        android:id="@+id/trainid"
+        android:icon="@drawable/ic_baseline_train_24"
+        android:title="@string/train" />
+</menu>
