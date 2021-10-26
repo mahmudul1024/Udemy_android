@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B71C1C"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!-- build a layout what you want to insert according to your wish -->
+
+
+    <TextView
+        android:id="@+id/headerid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#FF6F00"
+        android:gravity="center"
+        android:text="Room Database demo"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="enter input as required"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:text="Name"
+            android:textColor="#F8F6F6"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/FatherNameid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="enter input as required"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:text="Name"
+            android:textColor="#F8F6F6"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Phoneid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="enter input as required"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="#F8F0F0"
+            android:textColorHint="#FBF7F7"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/savebtnid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="save data"
+            android:textColorHighlight="#D6A0A0"
+            android:textStyle="bold"
+            app:backgroundTint="#FF6F00"
+            app:rippleColor="#E4CECE"
+            app:strokeColor="#EDE5E5" />
+
+        <Button
+            android:id="@+id/button_show_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="show data"
+            app:backgroundTint="#FA7100" />
+    </LinearLayout>
+
+</LinearLayout>
