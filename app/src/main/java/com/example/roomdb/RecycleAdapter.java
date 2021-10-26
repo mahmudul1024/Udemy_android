@@ -35,6 +35,9 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewho
     @Override
     public void onBindViewHolder(@NonNull MyViewholder holder, int position){
  //binding
+
+        //first position then getName will exicute
+
         holder.txname.setText(mydetailinfoList.get(position).getName());
         holder.name2.setText(mydetailinfoList.get(position).getFatherName());
         holder.phon.setText(mydetailinfoList.get(position).getPhoneNumber());

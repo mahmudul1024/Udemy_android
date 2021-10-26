@@ -34,10 +34,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:ems="10"
-            android:hint="enter input as required"
+            android:hint="enter your name"
             android:inputType="textPersonName"
             android:padding="10dp"
-            android:text="Name"
             android:textColor="#F8F6F6"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -48,10 +47,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:ems="10"
-            android:hint="enter input as required"
+            android:hint="enter your father name"
             android:inputType="textPersonName"
             android:padding="10dp"
-            android:text="Name"
             android:textColor="#F8F6F6"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -62,11 +60,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:ems="10"
-            android:hint="enter input as required"
+            android:hint="enter mobile number"
             android:inputType="phone"
             android:padding="10dp"
             android:textColor="#F8F0F0"
-            android:textColorHint="#FBF7F7"
+
             android:textSize="24sp"
             android:textStyle="bold" />
 

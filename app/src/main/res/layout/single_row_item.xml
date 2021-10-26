@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/singlle_layout_id"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/nameshow_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
         android:gravity="center"
-        android:text="@string/textview"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:text=""
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/fathe_show_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
         android:gravity="center"
-        android:text="@string/sss"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:text=""
+        android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/pho_sho_id"
+        android:id="@+id/Phoneid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
         android:gravity="center"
-        android:text="@string/sstextview"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:text=""
+        android:textSize="20sp" />
 </LinearLayout>
